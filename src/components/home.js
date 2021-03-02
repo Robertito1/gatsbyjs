@@ -1,15 +1,8 @@
 import React from "react";
-import anime from 'animejs/lib/anime.es.js';
 
 
 function Main() {
-  anime({
-    targets: 'h2',
-    translateX: 250,
-    rotate: '1turn',
-    backgroundColor: '#FFF',
-    duration: 800
-  });
+
   return (
    <div className=' bg-black rounded-md flex flex-col justify-center align-center mb-8 px-40 py-20 lg:flex-row justify-start'>
     <div className='text-white flex flex-col w-1/2'>
