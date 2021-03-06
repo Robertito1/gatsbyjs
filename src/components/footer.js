@@ -6,7 +6,7 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faBitbucket } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => (
-  <footer className='w-full flex flex-col align-center justify-around bg-black h-40 rounded-md px-40 lg:flex-row justify-between'>
+  <footer style={{ backgroundColor: '#262626'}} className='w-full flex flex-col align-center justify-around h-40 rounded-md px-8 md:px-20 lg:flex-row justify-between px-40'>
     <div className='text-white flex justify-center align-center w-full items-center lg:justify-start'>
     <a href="https://linkedin.com/in/orazurobert" rel="noopener noreferrer" target="_blank" className="mr-6">
        <FontAwesomeIcon icon={faLinkedinIn} size="2x" className="hover:bg-gray-400"/>

@@ -4,9 +4,9 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header
-  className='bg-black'
     style={{
       background: ``,
+      backgroundColor: '#3d3c3c',
       marginBottom: `1.45rem`,
     }}
   >

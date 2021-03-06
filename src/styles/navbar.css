@@ -1,6 +1,6 @@
 nav {
   height: 10vh;
-  background: black;
+  background-color: #262626;
   display: flex;
   justify-content: space-between;
 }

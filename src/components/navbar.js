@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import '../styles/navbar.css'
-import { StaticImage } from "gatsby-plugin-image"
 
 const Navbar = () => {
 
@@ -9,13 +8,12 @@ const Navbar = () => {
     let shouldAnimate = open ? 'fade' : ''
     return ( 
      <nav className='rounded-md mb-8'>
-        <div className="hamburger" onClick={()=> setOpen(!open)}>
+        <div className="hamburger" onClick={()=> setOpen(!open)} onKeyDown={()=> setOpen(!open)}>
             <div className="line"></div>
             <div className="line"></div>
             <div className="line"></div>
         </div>
         <div className="text-white">
-          {/* <StaticImage src="../images/logo.png" width={100} quality={95} alt="A dinosaur" className='p-0' /> */}
           logo
         </div>
         <ul className={'nav-links' + ' ' + isOpen}>
