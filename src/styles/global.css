@@ -3,12 +3,18 @@
 @tailwind utilities;
 
 .fancytext {
-  background: -webkit-linear-gradient(
-    180deg,
-    #68f7d5 0,
-    #ccffa6 50%,
-    #37ebaa 100%
-  );
+  background: -webkit-linear-gradient(0deg, #68f7d5 0, #ccffa6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.sectiontext {
+  color: #3238a8;
+}
+
+.viewProjectBtn {
+  padding: 5px 8px 5px 8px;
+  background: -webkit-linear-gradient(0deg, #68f7d5 0, #ccffa6 100%);
+  border-radius: 10px;
+  border: 1px solid gray;
 }

@@ -3,13 +3,13 @@ import PropTypes from "prop-types"
 
 import "../styles/layout.css"
 import Footer from "./footer"
-// import Navbar from "./navbar"
+import Navbar from "./navbar"
 
 const Layout = ({ children }) => {
   
   return (
     <div className='backdroP'>
-      {/* <Navbar/> */}
+      <Navbar/>
         <main>{children}</main>
       <Footer />
     </div>
