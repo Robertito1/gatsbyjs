@@ -1,8 +1,7 @@
 import React from "react";
-import ReactAnime from 'react-animejs'
+// import ReactAnime from 'react-animejs'
 import { StaticImage } from "gatsby-plugin-image"
-const {Anime} = ReactAnime
-
+// const {Anime} = ReactAnime
 
 function Main() {
   return (

@@ -1,8 +1,15 @@
 import React from 'react';
+import '../styles/skills.css'
 
 const Skills = () => {
+    
     return ( 
         <div id='skills'style={{ backgroundColor: '#262626'}} className='text-white px-8 py-20 md:px-20 lg:px-30'>
+            {/* <div>
+                <h4 className='text-white text-4xl express'>
+                    EXPRESS
+                </h4>
+            </div> */}
         <h4 className='mb-8 lg:mb-20 text-4xl md:text-6xl font-bold sectiontext aTitleText'>Industry relevant Skills</h4>
         <div>
         <p className='text-2xl'>Programming Languages</p>
