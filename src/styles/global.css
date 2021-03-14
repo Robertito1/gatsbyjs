@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Barlow:wght@200&display=swap');
+
 .fancytext {
   background: -webkit-linear-gradient(0deg, #68f7d5 0, #ccffa6 100%);
   -webkit-background-clip: text;
@@ -17,4 +19,13 @@
   background: -webkit-linear-gradient(0deg, #68f7d5 0, #ccffa6 100%);
   border-radius: 10px;
   border: 1px solid gray;
+}
+
+p{
+  font-family: Barlow, sans-serif;
+  font-weight: 300;
+}
+
+.aTitleText{
+  font-family: 'Barlow Condensed', sans-serif;
 }

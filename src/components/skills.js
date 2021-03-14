@@ -3,42 +3,42 @@ import React from 'react';
 const Skills = () => {
     return ( 
         <div id='skills'style={{ backgroundColor: '#262626'}} className='text-white px-8 py-20 md:px-20 lg:px-30'>
-        <h4 className='mb-4 text-5xl font-bold sectiontext'>Industry relevant Skills</h4>
+        <h4 className='mb-8 lg:mb-20 text-4xl md:text-6xl font-bold sectiontext aTitleText'>Industry relevant Skills</h4>
         <div>
-        <h6 className='text-2xl'>Programming Languages</h6>
+        <p className='text-2xl'>Programming Languages</p>
         <ul className='mb-4'>
-            <li className='text-xl'>JavaScript</li>
-            <li className='text-xl'>TypeScript</li>
-            <li className='text-xl'>Java</li>
+            <li className='text-xl'><p>JavaScript</p></li>
+            <li className='text-xl'><p>TypeScript</p></li>
+            <li className='text-xl'><p>Java</p></li>
         </ul>
-        <h6 className='text-2xl'>Frontend Development</h6>
+        <p className='text-2xl'>Frontend Development</p>
         <ul className='mb-4'>
-            <li className='text-xl'>HTML</li>
-            <li className='text-xl'>CSS</li>
-            <li className='text-xl'>JavaScript</li>
-            <li className='text-xl'>React/Redux</li>
-            <li className='text-xl'>BootStrap</li>
-            <li className='text-xl'>Tailwind Css</li>
+            <li className='text-xl'><p>HTML</p></li>
+            <li className='text-xl'><p>CSS</p></li>
+            <li className='text-xl'><p>JavaScript</p></li>
+            <li className='text-xl'><p>React/Redux</p></li>
+            <li className='text-xl'><p>Bootstrap</p></li>
+            <li className='text-xl'><p>Tailwind Css</p></li>
         </ul>
-        <h6 className='text-2xl'>Backend Development</h6>
+        <p className='text-2xl'>Backend Development</p>
         <ul className='mb-4'>
-            <li className='text-xl'>Node.js/Express.js</li>
-            <li className='text-xl'>Graphql</li>
-            <li className='text-xl'>Java/SpringBoot</li>
+            <li className='text-xl'><p>Node.js/Express.js</p></li>
+            <li className='text-xl'><p>Graphql</p></li>
+            <li className='text-xl'><p>Java/SpringBoot</p></li>
         </ul>
-        <h6 className='text-2xl'>DataBase Administration</h6>
+        <p className='text-2xl'>DataBases</p>
         <ul className='mb-4'>
-            <li className='text-xl'>MongoDB</li>
-            <li className='text-xl'>PostgreSQL</li>
+            <li className='text-xl'><p>MongoDB</p></li>
+            <li className='text-xl'><p>PostgreSQL</p></li>
         </ul>
-        <h6 className='text-2xl'>Software testing</h6>
+        <p className='text-2xl'>Software testing</p>
         <ul className='mb-4'>
-            <li className='text-xl'>Jest</li>
-            <li className='text-xl'>Cypress</li>
+            <li className='text-xl'><p>Jest</p></li>
+            <li className='text-xl'><p>Cypress</p></li>
         </ul>
-        <h6 className='text-2xl'>CI/CD</h6>
+        <p className='text-2xl'>CI/CD</p>
         <ul className='mb-4'>
-            <li className='text-xl'>Github Actions</li>
+            <li className='text-xl'><p>Github Actions</p></li>
         </ul>
         </div>
         </div>
