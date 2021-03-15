@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 const Projects = () => {
   useEffect(() => {
     AOS.init({
-        duration: 1000,
+        duration: 500,
         easing: 'ease-in',
         delay: 100
     });

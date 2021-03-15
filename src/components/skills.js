@@ -159,7 +159,7 @@ const Skills = () => {
                             {color: '#262626'},
                             {translateX: 0},
                           ],
-                        duration: 4000,
+                        duration: 5000,
                         easing: "linear",
                         loop: true
                         }
