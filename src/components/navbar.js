@@ -22,7 +22,7 @@ const Navbar = () => {
             <li className={shouldAnimate}><Link to="/" onClick={()=> setOpen(!open)}>Home</Link></li>
             <li className={shouldAnimate}><Link to="/#skills" onClick={()=> setOpen(!open)}>Skills</Link></li>
             <li className={shouldAnimate}><Link to="/#projects" onClick={()=> setOpen(!open)}>Projects</Link></li>
-            <li className={shouldAnimate}><Link to="#" onClick={()=> setOpen(!open)}>Blog</Link></li>
+            <li className={shouldAnimate}><Link to="/blogs" onClick={()=> setOpen(!open)}>Blog</Link></li>
         </ul>
     </nav>
      );

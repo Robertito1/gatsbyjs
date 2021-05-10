@@ -5,10 +5,13 @@ module.exports = {
     author: `Robert`,
   },
   plugins: [
+    `gatsby-plugin-mdx`,
     'gatsby-plugin-postcss',
     `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-fontawesome-css`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -16,8 +19,19 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/pages/blogs`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
