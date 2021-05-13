@@ -3,7 +3,7 @@ title: Hello, world!
 path: /hello-world
 image: ../../images/robert.jpg
 ---
-
+import { Disqus } from 'gatsby-plugin-disqus';
 import Navbar from "../../components/navbar"
 
 
@@ -25,9 +25,10 @@ const Blogs = () => {
     return (
         <div>
             Blog Home page
-            <Link to="/blogs/react-refs">React refs</Link> jjjlllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+            <Link to="/blogs/react-refs">React refs</Link> 
             <Link to="/blogs/second">soc</Link>
         </div>
     )
 }
 ```
+<Disqus />
