@@ -1,10 +1,27 @@
-import { Link } from 'gatsby';
 import { StaticImage } from "gatsby-plugin-image"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 import React from 'react';
 import Layout from '../../components/layout';
 
  const Blogs = () => {
+
+    const title  = useStaticQuery(
+        graphql`
+        query {
+            allMdx {
+              edges {
+                node {
+                  frontmatter {
+                    title
+                  }
+                }
+              }
+            }
+          }
+        `
+         )
+         console.log(title.allMdx.edges)
     return (
         <Layout>
             <div className='w-full flex  mt-12 lg:mt-0 px-8 py-10 md:px-20 md:py-10 md:w-3/4 lg:align-center lg:flex-row lg:justify-around lg:px-30 lg:py-10 lg:w-1/2'>
