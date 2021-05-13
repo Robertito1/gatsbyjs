@@ -46,7 +46,3 @@ pre{
   flex-wrap: nowrap;
   overflow-x: auto;
 }
-
-::-webkit-scrollbar{
-  width: 20px;
-}
