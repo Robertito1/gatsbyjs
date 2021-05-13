@@ -29,3 +29,24 @@ p{
 .aTitleText{
   font-family: 'Barlow Condensed', sans-serif;
 }
+
+h1{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+ul{
+  list-style-type: disc;
+  padding: 20px;
+}
+
+pre{
+  background: rgb(71, 67, 67);
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+::-webkit-scrollbar{
+  width: 20px;
+}
