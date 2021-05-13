@@ -13,7 +13,7 @@ import Layout from '../../components/layout';
               edges {
                 node {
                   frontmatter {
-                    title
+                    title,
                   }
                 }
               }
@@ -21,7 +21,8 @@ import Layout from '../../components/layout';
           }
         `
          )
-         console.log(title.allMdx.edges)
+      const url = title.allMdx.edges[0].node.frontmatter.title
+      const url2 = title.allMdx.edges[1].node.frontmatter.title
     return (
         <Layout>
             <div className='w-full flex  mt-12 lg:mt-0 px-8 py-10 md:px-20 md:py-10 md:w-3/4 lg:align-center lg:flex-row lg:justify-around lg:px-30 lg:py-10 lg:w-1/2'>
@@ -33,8 +34,8 @@ import Layout from '../../components/layout';
                </div>
                <div className='flex align-center justify-center bg-black h-0.5 w-60'></div> 
            </div>
-            <Link to="/blogs/react-refs">React refs</Link>
-            <Link to="/blogs/second">soc</Link>
+            <Link to="/blogs/react-refs">{url2}</Link>
+            <Link to="/blogs/second">{url}</Link>
         </Layout>
     )
 }
