@@ -14,11 +14,15 @@ import ProfileCard from "../../components/profileCard";
                 node {
                   frontmatter {
                     title,
+                    description
                     image {
                       childImageSharp {
-                        fluid(maxWidth: 800) {
-                          ...GatsbyImageSharpFluid
-                        }
+                        gatsbyImageData(
+                          width: 200
+                          quality: 95
+                          placeholder: BLURRED
+                          formats: [AUTO, WEBP, AVIF]
+                        )
                       }
                     }
                   }
@@ -26,7 +30,7 @@ import ProfileCard from "../../components/profileCard";
               }
             }
           }
-        `
+       `
          )
       const data = title.allMdx.edges[0].node.frontmatter
     return (
@@ -37,7 +41,7 @@ import ProfileCard from "../../components/profileCard";
               <div className='bg-white h-px w-full'>
               </div>
             </div>
-             <BlogCard data={data} />
+             {title.allMdx.edges.map((e) =>  <BlogCard data={e.node.frontmatter} />)}
             <Link to="/blogs/react-refs">ff</Link>
             <Link to="/blogs/second">ffd</Link>
           </div>
