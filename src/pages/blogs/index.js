@@ -37,7 +37,7 @@ import ProfileCard from "../../components/profileCard";
       console.log(data)
     return (
         <Layout>
-          <div style={{ backgroundColor: '#262626'}} className='w-full rounded-md mb-8'>
+          <div style={{ backgroundColor: '#262626'}} className='w-full rounded-md mb-8 pb-12'>
             <ProfileCard />
             <div className='flex align-center px-8 md:px-20 lg:px-28 justify-center'>
               <div className='bg-white h-px w-full'>
