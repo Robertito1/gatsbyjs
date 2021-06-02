@@ -1,17 +1,23 @@
 import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
+import {Link} from 'gatsby'
+import Img from 'gatsby-image'
 
 
-const BlogCard = () => {
+
+const BlogCard = ({data}) => {
+    console.log(data)
     return (
-        <div className='flex'>
-               <div className='w-75 text-white'>
-                   <p>TITLE</p>
-                   <p>Lorem ipsum muru anya make ndi ntiwa azu no ni ime ulo gi</p>
-               </div>
-               <StaticImage src="../images/react.png" width={80} quality={95} alt="A dinosaur"
-               className='p-0 m-0 w-1/4' />
-        </div>
+        <>
+        <Img fluid={data.image.childImageSharp.fluid}  alt="A dinosaur"/>
+        <Link to="/blogs/react-refs" className='flex mx-20 mt-20 lg:h-60 md:mx-32 lg:mx-38'>
+               <div className='p-9 bg-black w-7/12 text-white'>
+                   <p className='text-white'>{data.title}</p>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt neque nec nisi viverra,
+                      nec cursus arcu efficitur. Proin purus tortor, ornare eget erat id
+                   </p>
+               </div> 
+        </Link>
+        </>
     )
 }
 
