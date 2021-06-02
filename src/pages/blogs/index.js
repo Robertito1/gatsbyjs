@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import React from 'react';
 import BlogCard from "../../components/blogCard";
 import Layout from '../../components/layout';
@@ -15,6 +15,7 @@ import ProfileCard from "../../components/profileCard";
                   frontmatter {
                     title,
                     description
+                    path
                     image {
                       childImageSharp {
                         gatsbyImageData(
@@ -33,6 +34,7 @@ import ProfileCard from "../../components/profileCard";
        `
          )
       const data = title.allMdx.edges[0].node.frontmatter
+      console.log(data)
     return (
         <Layout>
           <div style={{ backgroundColor: '#262626'}} className='w-full rounded-md mb-8'>
@@ -41,9 +43,11 @@ import ProfileCard from "../../components/profileCard";
               <div className='bg-white h-px w-full'>
               </div>
             </div>
-             {title.allMdx.edges.map((e) =>  <BlogCard data={e.node.frontmatter} />)}
-            <Link to="/blogs/react-refs">ff</Link>
-            <Link to="/blogs/second">ffd</Link>
+             {title.allMdx.edges.map((e) =>  
+             <BlogCard 
+             data={e.node.frontmatter} 
+             key={e.node.frontmatter.path}
+             />)}
           </div>
         </Layout>
     )
