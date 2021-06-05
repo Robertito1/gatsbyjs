@@ -5,7 +5,7 @@ module.exports = {
     author: `Robert`,
   },
   plugins: [
-    `gatsby-plugin-mdx`,
+    `gatsby-remark-images`,
     'gatsby-plugin-postcss',
     `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
@@ -37,6 +37,20 @@ module.exports = {
       options: {
           shortname: `robert-orazu-netlify-app`
       }
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,

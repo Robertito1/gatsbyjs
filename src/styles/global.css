@@ -46,3 +46,12 @@ pre{
   flex-wrap: nowrap;
   overflow-x: auto;
 }
+
+.gatsby-resp-image-image {
+  width:100% !important;
+  height: 50% !important;
+}
+
+.gatsby-resp-image-background-image {
+  padding-bottom: 20% !important;
+}
