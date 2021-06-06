@@ -49,9 +49,9 @@ pre{
 
 .gatsby-resp-image-image {
   width:100% !important;
-  height: 50% !important;
+  height: 100% !important;
 }
 
 .gatsby-resp-image-background-image {
-  padding-bottom: 20% !important;
+  padding-bottom: 30% !important;
 }
