@@ -14,7 +14,7 @@ function Main() {
       <p className='text-2xl text-yellow-200  mt-4 aTitleText'>CHEERS ROBERT</p>
     </div>
     <div className='flex order-1 lg:order-2 justify-center mt-12 lg:mt-0'>
-      <StaticImage src="../images/robert.jpg" width={300} quality={95} alt="A dinosaur" className='p-0 rounded-full' /> 
+      <StaticImage src="../images/robert.jpg" width={300} quality={95} alt="A dinosaur" className='p-0 rounded-full mb-8 lg:mb-0' /> 
     </div>
    </div>
   )
