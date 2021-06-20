@@ -5,17 +5,19 @@ image: ../../pages/blogs/gatsby-astronaut.png
 description: The description of the third blog
 ---
 
-import Navbar from "../../components/navbar"
+import Layout from "../../components/layout"
+import BlogWrapper from "../../components/blogWrapper"
 
-
-<Navbar />
+<Layout>
+<BlogWrapper>
 
 ![refs](./gatsby-astronaut.png)
-# Hello, world!
 
-Here's a color picker!
+# Hello, Third!
 
-To run this project locally, the follow tools need to be installed:
+Lorem Ipsum
+
+This is a dummy blog to test out the project
 
 * [Node.js](https://nodejs.org/en/download/)
 * [Yarn](https://classic.yarnpkg.com/en/docs/install)
@@ -33,3 +35,7 @@ const Blogs = () => {
     )
 }
 ```
+<Disqus /> 
+
+</BlogWrapper>
+</Layout>
